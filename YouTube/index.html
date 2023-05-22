@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube-FINALE</title>
+    <link rel="stylesheet" href="index.css"> 
+    <script type="module" src="home.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+    crossorigin="anonymous"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  />
+  </head>
+  <body>
+    <!-- -------------------------Header start-------------------------------->
+    <header class="header">
+      <!-- <div class="header_container">
+        <div class="none"></div>
+        <div class="search">
+          <input class="user-input" type="text" placeholder="Search" />
+          <i onclick="searchVideos()" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="user">
+          <div class="icon">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-grip"></i>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+
+          <div class="img">
+           
+          </div>
+        </div>
+
+        <div class="toggle">
+          <i class="fa-solid fa-bars" id="header-toggle"></i>
+        </div>
+      </div> -->
+    </header>
+
+    <!-- -----------------------Header End--------------------------------->
+
+    <!-- -----------------------NAVBAR START------------------------------->
+
+    <section id="navbar" class="nav">
+      <nav class="nav_container">
+        <div>
+          <a href="#" class="nav_link nav_logo">
+            <i class="fa-solid fa-bars nav_icon"></i>
+            <span class="logo_name">
+              <i class="fab fa-youtube"></i>
+              Youtube
+            </span>
+          </a>
+        
+
+          <div class="nav_list">
+            <div class="nav_items navtop">
+              <a href="#" class="nav_link navtop active">
+                <i class="fa fa-house nav_icon"></i>
+                <span class="nav_name">Home</span>
+              </a>
+              <a href="#" class="nav_link navtop">
+                <i class="fa fa-compass nav_icon"></i>
+                <span class="nav_name">Explore</span>
+              </a>
+              <a href="#" class="nav_link navtop">
+                <i class="fa-brands fa-tiktok nav_icon"></i>
+                <span class="nav_name">Short Video</span>
+              </a>
+              <a href="#" class="nav_link navtop">
+                <i class="fa-solid fa-users nav_icon"></i>
+                <span class="nav_name">Channel</span>
+              </a>
+              <a href="#" class="nav_link navtop">
+                <i class="fa-solid fa-video nav_icon"></i>
+                <span class="nav_name">Library</span>
+              </a>
+              <a href="#" class="nav_link navtop">
+                <i class="fa-solid fa-clock-rotate-left nav_icon"></i>
+                <span class="nav_name">History</span>
+              </a>
+              <a href="#" class="nav_link navtop">
+                <i class="fa-solid fa-thumbs-up nav_icon"></i>
+                <span class="nav_name">Like</span>
+              </a>
+
+              <a href="#" class="nav_link">
+                <i class="fa-solid fa-comment nav_icon"></i>
+                <span class="nav_name">Messages</span>
+              </a>
+            </div>
+
+            <div class="nav_items subscribe-container">
+              <h3 class="nav_subititle">SUBSCRIPTIONS</h3>
+
+              <a href="#" class="nav_link">
+                <img
+                  class="subscribe"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&usqp=CAU"
+                  alt=""
+                />
+                <span class="nav_name">Web Dev</span>
+              </a>
+              <a href="#" class="nav_link">
+                <img
+                  class="subscribe"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&usqp=CAU"
+                />
+                <span class="nav_name">Frontend Developer</span>
+              </a>
+              <a href="#" class="nav_link">
+                <img
+                  class="subscribe"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&usqp=CAU"
+                />
+                <span class="nav_name">Backend Development</span>
+              </a>
+              <a href="#" class="nav_link">
+                <img
+                  class="subscribe"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&usqp=CAU"
+                />
+                <span class="nav_name">Full-stack Developer</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <main>
+      <section class="video_content grid">
+
+        <!-- <div onclick="Video_Play()" class="video_items">
+          <a href="single-page.html">
+            <img src=`${snippet.thumbnails.high.url}` alt="" />
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img style="border-radius: 50%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&usqp=CAU" alt="" />
+            </div>
+            <div class="heading">
+              <p>`${snippet.title}`</p>
+              <span>`${snippet.channelTitle}` <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/3I3JwURXpJA/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"Три песни Ленине / Three Songs About Lenin (1934) документальный фильм"</p>
+              <span>"Классика советского кино (официальный канал)" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/PdxKy8td0Rk/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%;  ">
+            </div>
+            <div class="heading">
+              <p>"നിങ്ങൾ ആവശ്യപ്പെട്ട ചലച്ചിത്രഗാനങ്ങൾ | Evergreen Malayalam Film Songs | Satyam Audios"</p>
+              <span>"satyamjukebox" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/Dss9RIzyGi0/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%;  ">
+            </div>
+            <div class="heading">
+              <p>"మనసును తాకే విరహగీతం | Heart Touching VijayaNirmala Emotional Song | Poola Rangadu |Old Telugu Songs"</p>
+              <span>"Old Telugu Songs" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/BO5CLi4lsic/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"ആടാനും പാടാനും  ആർത്തുല്ലസിക്കാനും  ഏവരും കൊതിക്കുന്ന മലയാളസിനിമയിലെ  തകർപ്പൻഗാനങ്ങൾ| SUPERHIT SONGS"</p>
+              <span>"Movie World Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/vvkATE_IUns/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"बच्चों के लिए बेबी शार्क गाना  गाओ और नाचो | Hindi songs for kids"</p>
+              <span>"Vlad i Niki Polski" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/2rZQb2ippBs/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"மனதை மயக்கும் இனிமையான காதல் பாடல்கள்/ love songs"</p>
+              <span>"Tamil music 321" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/dPs_BEs51PI/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"രാത്രിയുടെ യാമങ്ങളിൽ കാതോർത്തിരിക്കുന്ന മനോഹര ഗാനങ്ങൾ | SOULFUL SONGS MALAYALAM"</p>
+              <span>"Nisari Chithrageetham" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/XQ4VXjRWPfs/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"ล้อบนรถบัส เพลงก่อนวัยเรียน วิดีโอสำหรับเด็ก Songs For Kids 3D Preschool Rhymes Wheels On The Bus"</p>
+              <span>"Loco Nuts - เพลงเด็กอนุบาลเป็นภาษาไทย" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/tEwnz2GRU4g/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"दीपावली स्पेशल भक्ति : नॉनस्टॉप लक्ष्मी जी के भजन Nonstop Laxmi  Bhajan | Laxmi Song | Laxmi Bhajan"</p>
+              <span>"Bhajan India" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/OvsUcMI0Ojw/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"आली दिवाळी | Aali Diwali Official Song | New Diwali Songs 2022 | Satyam Patil | Yukta Patil"</p>
+              <span>"Saptsur Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/9iyV7G0J8mU/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"මනෝපාරකට 💙 Vol:08 | cover songs collection"</p>
+              <span>"Mano Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/B_KMSYQTCxo/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"പാട്ടുകേട്ട് ഉറങ്ങാം | Malayalam Film Songs | Satyam Audios"</p>
+              <span>"satyamjukebox" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/i2IFEAfSETk/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%;">
+            </div>
+            <div class="heading">
+              <p>"කාංචනා අනුරාධි හොඳම ගීත එකතුව | Kanchana Anuradhi Best Song Collection | SL Evoke Music"</p>
+              <span>"SL Evoke Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/XJppo8AVIH4/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"දුර ගමනකට හරියනම සින්දු එකතුවක් | Best Sinhala Old Songs Collection | VOL 30 |  | SL Evoke Music"</p>
+              <span>"SL Evoke Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/22wIpf6TTBk/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"രാത്രികളിൽ കേൾക്കാൻ കൊതിക്കുന്ന ഗാനങ്ങൾ | Melody Songs | Malayalam Film Songs"</p>
+              <span>"satyamjukebox" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/J_vH4L0KsH0/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%;">
+            </div>
+            <div class="heading">
+              <p>"എത്ര കേട്ടാലും മതിവരാത്ത ജനപ്രിയ ഗാനങ്ങൾ | Evergreen Malayalam Film Songs"</p>
+              <span>"Wilson Jukebox" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/z_Fs50z71G0/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"1951 Bollywood Dance Songs Video - सदाबहार गीत Old Superhit Gaane  | Bollywood Popular Hindi Songs"</p>
+              <span>"Captain Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/09Xa1kVlPac/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%;">
+            </div>
+            <div class="heading">
+              <p>"1959 Bollywood Love Romantic &amp; Happy Songs Video | Most Popular  प्यार भरे गाने Hindi Gaane"</p>
+              <span>"Captain Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/wO09y7b-s2Y/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"1960 Love &amp; Romantic Bollywood Songs Video |  | Popular Hindi Songs"</p>
+              <span>"Captain Music" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div><div class="video_items">
+          <a href="single-page.html">
+            <img src="https://i.ytimg.com/vi/M-lPnD4mWAE/hqdefault.jpg" alt="">
+          </a>
+          <div class="details flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8qDWZHzqgAsLj2rp1y2uFUWSHa6JjUWEDw&amp;usqp=CAU" style="border-radius: 50%; ">
+            </div>
+            <div class="heading">
+              <p>"🙏2 Hours Non Stop Worship Songs 2022 With Lyrics✝️Best 100 Christian Worship Songs✝️Music Praise"</p>
+              <span>"Intrument Worship" <i class="fa fa-circle-check"></i> </span>
+              <span>56.7M .1 Week ago</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
+
+
+
