@@ -1,0 +1,125 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+body > h1{
+  text-align: center;
+  color: #32629D;
+  text-decoration: underline;
+}
+form{
+ width: 280px;
+ height: fit-content;
+ padding: 15px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ margin-top: 50px;
+ 
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+.formDiv{
+  border: solid black;
+}
+.formDiv>*{
+  margin-bottom: 20px;
+}
+
+
+body * {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+}
+body{
+  max-width: 80%;
+  margin: auto;
+  background-color: #4475ad;
+}
+
+h1+ div{
+  display: flex;
+}
+form > *{
+  margin: 3px;
+  
+}
+body>h1{
+  color: whitesmoke;
+}
+
+form > #mbl ~ input {
+  width: 260px;
+  height: 30px;
+  background-color: #2bbe64;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+
+}
+#name {
+  width: 260px;
+  height: 25px;
+  border: 1px solid rgb(154, 152, 152);
+  
+}
+#docID{
+  width: 260px;
+  height: 25px;
+  border: 1px solid rgb(154, 152, 152);
+}
+
+#dept{
+  width: 270px;
+  height: 25px;
+  border: 1px solid rgb(154, 152, 152);
+}
+
+#exp{
+  width: 260px;
+  height: 25px;
+  border: 1px solid rgb(154, 152, 152);
+}
+
+#email{
+  width: 260px;
+  height: 25px;
+  border: 1px solid rgb(154, 152, 152);
+}
+
+#mbl{
+  width: 260px;
+  height: 25px;
+  border: 1px solid rgb(154, 152, 152);
+}
+
+h1 + div > table > thead > tr >th{
+  background-color: #0c74ba;
+  color: white;
+}
+
+h1 + div > table > thead > tr >th:nth-child(1){
+  width: 70px;
+}
+
+h1 + div > table > thead > tr >th:nth-child(5){
+  width: 300px;
+}
+
+.button{
+  background-color: aqua;
+}
